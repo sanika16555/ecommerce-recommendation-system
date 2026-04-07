@@ -1,0 +1,4 @@
+Algorithm,Our_time_s,Paper_time_s
+Apriori,0.1,0.0761
+FP-Growth,0.08,0.0662
+Hybrid,0.02,0.0043
