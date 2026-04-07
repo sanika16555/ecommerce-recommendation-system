@@ -12,21 +12,7 @@
 
 ---
 
-## Table of Contents
 
-1. [Project Overview](#-project-overview)
-2. [Problem Statement](#-problem-statement)
-3. [Dataset Details](#-dataset-details)
-4. [System Architecture](#-system-architecture)
-5. [Methodology — 7 Phases](#-methodology--7-phases)
-6. [Algorithms Implemented](#-algorithms-implemented)
-7. [Results and Comparison with Paper](#-results-and-comparison-with-paper)
-8. [Graphs and Visualizations](#-graphs-and-visualizations)
-9. [Project Structure](#-project-structure)
-10. [How to Run](#-how-to-run)
-11. [Dependencies](#-dependencies)
-12. [Key Findings and Conclusions](#-key-findings-and-conclusions)
-13. [References](#-references)
 
 ---
 
