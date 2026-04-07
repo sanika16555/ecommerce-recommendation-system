@@ -1,7 +1,22 @@
 # 🛒 E-Commerce Recommendation System
+
+### Replication of Research Paper: *"A Recommendation System for E-Commerce Products Using Collaborative Filtering Approaches"*
+
+> **Padhy, N., Suman, S., Priyadarshini, T.S., Mallick, S.** — *Engineering Proceedings 2024, 67, 50*
+> Published: September 24, 2024 | DOI: [10.3390/engproc2024067050](https://doi.org/10.3390/engproc2024067050)
+
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?style=for-the-badge&logo=numpy)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c?style=for-the-badge)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-ML_Tools-F7931E?style=for-the-badge&logo=scikit-learn)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
+
+---
+
+> 📖 **About This Project:** This project replicates a published research paper on e-commerce recommendation systems. It implements **10 algorithms entirely from scratch** using Python and NumPy — including SVD, SVD++, ALS, KNNBasic, Apriori, FP-Growth, K-Means, and Isolation Forest — to predict product ratings and generate personalized recommendations. All models are evaluated via 3-fold cross-validation and benchmarked against the paper's reported RMSE/MAE values. Our SVD implementation achieves **28.6% lower RMSE** than the paper, confirming it as the best algorithm for e-commerce recommendation.
 
 ---
 
@@ -669,5 +684,3 @@ Raw Data
 - Institution: NMIMS Indore
 
 ---
-
-> *This project was developed as a mini project assignment to replicate, understand, and critically evaluate a published research paper on recommendation systems. All algorithms are implemented from scratch without using any recommendation-specific libraries.*
