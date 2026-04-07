@@ -8,11 +8,6 @@
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
-![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?style=for-the-badge&logo=numpy)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c?style=for-the-badge)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-ML_Tools-F7931E?style=for-the-badge&logo=scikit-learn)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
 
 ---
 
