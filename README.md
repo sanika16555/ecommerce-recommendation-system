@@ -1,19 +1,26 @@
-# 🛒 E-Commerce Recommendation System
+# E-Commerce Recommendation System
 
+### Replication of Research Paper: *"A Recommendation System for E-Commerce Products Using Collaborative Filtering Approaches"*
 
+> **Padhy, N., Suman, S., Priyadarshini, T.S., Mallick, S.** — *Engineering Proceedings 2024, 67, 50*
+> Published: September 24, 2024 | DOI: [10.3390/engproc2024067050](https://doi.org/10.3390/engproc2024067050)
 
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
-
+![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-013243?style=for-the-badge&logo=numpy)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c?style=for-the-badge)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-ML_Tools-F7931E?style=for-the-badge&logo=scikit-learn)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
 
 ---
 
-> 📖 **About This Project:** This project replicates a published research paper on e-commerce recommendation systems. It implements **10 algorithms entirely from scratch** using Python and NumPy — including SVD, SVD++, ALS, KNNBasic, Apriori, FP-Growth, K-Means, and Isolation Forest — to predict product ratings and generate personalized recommendations. All models are evaluated via 3-fold cross-validation and benchmarked against the paper's reported RMSE/MAE values. Our SVD implementation achieves **28.6% lower RMSE** than the paper, confirming it as the best algorithm for e-commerce recommendation.
+> **About This Project:** This project replicates a published research paper on e-commerce recommendation systems. It implements **10 algorithms entirely from scratch** using Python and NumPy — including SVD, SVD++, ALS, KNNBasic, Apriori, FP-Growth, K-Means, and Isolation Forest — to predict product ratings and generate personalized recommendations. All models are evaluated via 3-fold cross-validation and benchmarked against the paper's reported RMSE/MAE values. Our SVD implementation achieves **28.6% lower RMSE** than the paper, confirming it as the best algorithm for e-commerce recommendation.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 1. [Project Overview](#-project-overview)
 2. [Problem Statement](#-problem-statement)
@@ -31,16 +38,16 @@
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This mini project is a **complete replication** of a published research paper on e-commerce recommendation systems. The goal is to implement, evaluate, and compare multiple recommendation algorithms — all built **from scratch using pure Python and NumPy** — and benchmark them against the results reported in the original paper.
 
 The system recommends products to users based on their past ratings and behavior, using a combination of:
 
-- 📦 **Association Rule Mining** — finds "Frequently bought together" patterns
-- 🤝 **Collaborative Filtering** — predicts ratings using "Users like you also liked..."
-- 👥 **Clustering** — groups users with similar tastes using K-Means
-- 🚨 **Anomaly Detection** — removes fake or suspicious ratings using Isolation Forest
+- **Association Rule Mining** — finds "Frequently bought together" patterns
+- **Collaborative Filtering** — predicts ratings using "Users like you also liked..."
+- **Clustering** — groups users with similar tastes using K-Means
+- **Anomaly Detection** — removes fake or suspicious ratings using Isolation Forest
 
 > **Course:** Recommendation Systems
 > **Type:** Mini Project (Individual)
@@ -48,7 +55,7 @@ The system recommends products to users based on their past ratings and behavior
 
 ---
 
-## 📋 Problem Statement
+## Problem Statement
 
 E-commerce platforms contain millions of products. Users face **decision fatigue** when browsing. A recommendation system solves this by:
 
@@ -63,7 +70,7 @@ E-commerce platforms contain millions of products. Users face **decision fatigue
 
 ---
 
-## 📊 Dataset Details
+## Dataset Details
 
 | Property | Value |
 |---|---|
@@ -89,16 +96,16 @@ A3F6G7        B000144I2Q      3         1360339200
 
 ### Rating Distribution (Amazon Data Pattern)
 ```
-1 star  (★☆☆☆☆) :  ~5%    Very dissatisfied
-2 stars (★★☆☆☆) :  ~5%    Dissatisfied
-3 stars (★★★☆☆) :  ~10%   Neutral
-4 stars (★★★★☆) :  ~20%   Satisfied
-5 stars (★★★★★) :  ~60%   Very satisfied  ← most common
+1 star  :  ~5%    Very dissatisfied
+2 stars :  ~5%    Dissatisfied
+3 stars :  ~10%   Neutral
+4 stars :  ~20%   Satisfied
+5 stars :  ~60%   Very satisfied  (most common)
 ```
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
@@ -128,7 +135,7 @@ A3F6G7        B000144I2Q      3         1360339200
 
 ---
 
-## 🔬 Methodology — 7 Phases
+## Methodology — 7 Phases
 
 ### Phase 1 — Data Preprocessing
 
@@ -394,44 +401,44 @@ Contamination rate set to 5%
 
 ---
 
-## 🤖 Algorithms Implemented
+## Algorithms Implemented
 
-> ⚡ All algorithms built **100% from scratch using NumPy** — no recommendation libraries
+> All algorithms built **100% from scratch using NumPy** — no recommendation libraries
 
 | Algorithm | Category | Key Purpose | Scratch? |
 |---|---|---|---|
-| Apriori | Association Mining | Find frequent itemsets | ✅ |
-| FP-Growth | Association Mining | Faster itemset mining via FP-Tree | ✅ |
-| Hybrid (Apriori + FP-Growth) | Association Mining | Combined best-of-both | ✅ |
-| SVD | Collaborative Filtering | Matrix factorization via SGD | ✅ |
-| SVD++ | Collaborative Filtering | SVD + implicit user feedback | ✅ |
-| ALS | Collaborative Filtering | Alternating least squares | ✅ |
-| KNNBasic | Collaborative Filtering | Item-based cosine similarity | ✅ |
-| K-Means | Clustering | User segmentation | ✅ |
-| Isolation Forest | Anomaly Detection | Random tree path-length outliers | ✅ |
-| KNN Anomaly | Anomaly Detection | Distance-based outlier detection | ✅ |
+| Apriori | Association Mining | Find frequent itemsets | Yes |
+| FP-Growth | Association Mining | Faster itemset mining via FP-Tree | Yes |
+| Hybrid (Apriori + FP-Growth) | Association Mining | Combined best-of-both | Yes |
+| SVD | Collaborative Filtering | Matrix factorization via SGD | Yes |
+| SVD++ | Collaborative Filtering | SVD + implicit user feedback | Yes |
+| ALS | Collaborative Filtering | Alternating least squares | Yes |
+| KNNBasic | Collaborative Filtering | Item-based cosine similarity | Yes |
+| K-Means | Clustering | User segmentation | Yes |
+| Isolation Forest | Anomaly Detection | Random tree path-length outliers | Yes |
+| KNN Anomaly | Anomaly Detection | Distance-based outlier detection | Yes |
 
 ---
 
-## 📈 Results and Comparison with Paper
+## Results and Comparison with Paper
 
 ### RMSE — Root Mean Square Error (Lower is Better)
 
 | Algorithm | Paper RMSE | Our RMSE | Difference | Status |
 |---|---|---|---|---|
-| **SVD** ⭐ Best | 1.3116 | 0.9360 | −28.64% | ✅ Better than paper |
-| **SVD++** | 1.3253 | 0.9456 | −28.65% | ✅ Better than paper |
-| **ALS** | 1.4485 | 1.5060 | +3.97% | ⚠️ Slightly higher (small dataset) |
-| **KNNBasic** | 1.4071 | 1.1495 | −18.30% | ✅ Better than paper |
+| **SVD** (Best) | 1.3116 | 0.9360 | −28.64% | Better than paper |
+| **SVD++** | 1.3253 | 0.9456 | −28.65% | Better than paper |
+| **ALS** | 1.4485 | 1.5060 | +3.97% | Slightly higher (small dataset) |
+| **KNNBasic** | 1.4071 | 1.1495 | −18.30% | Better than paper |
 
 ### MAE — Mean Absolute Error (Lower is Better)
 
 | Algorithm | Paper MAE | Our MAE | Difference | Status |
 |---|---|---|---|---|
-| **SVD** ⭐ Best | 1.0414 | 0.7244 | −30.44% | ✅ Better than paper |
-| **SVD++** | 1.0514 | 0.7340 | −30.19% | ✅ Better than paper |
-| **ALS** | 1.1518 | 1.2363 | +7.34% | ⚠️ Higher (small dataset) |
-| **KNNBasic** | 1.1115 | 0.8665 | −22.04% | ✅ Better than paper |
+| **SVD** (Best) | 1.0414 | 0.7244 | −30.44% | Better than paper |
+| **SVD++** | 1.0514 | 0.7340 | −30.19% | Better than paper |
+| **ALS** | 1.1518 | 1.2363 | +7.34% | Higher (small dataset) |
+| **KNNBasic** | 1.1115 | 0.8665 | −22.04% | Better than paper |
 
 <p align="center">
   <img src="graphs/comparison/rmse_ours_vs_paper.png" alt="RMSE — Our Implementation vs Paper" width="80%"/>
@@ -467,21 +474,21 @@ Contamination rate set to 5%
 Top-10 Product Recommendations for Sample User:
 
 Rank   Product           Predicted Rating
- 1     Product_413       4.81 ★★★★★
- 2     Product_828       4.80 ★★★★★
- 3     Product_284       4.78 ★★★★★
- 4     Product_1450      4.78 ★★★★★
- 5     Product_1310      4.76 ★★★★★
- 6     Product_1471      4.76 ★★★★★
- 7     Product_772       4.76 ★★★★★
- 8     Product_544       4.75 ★★★★★
- 9     Product_924       4.75 ★★★★★
-10     Product_1025      4.74 ★★★★★
+ 1     Product_413       4.81
+ 2     Product_828       4.80
+ 3     Product_284       4.78
+ 4     Product_1450      4.78
+ 5     Product_1310      4.76
+ 6     Product_1471      4.76
+ 7     Product_772       4.76
+ 8     Product_544       4.75
+ 9     Product_924       4.75
+10     Product_1025      4.74
 ```
 
 ---
 
-## 📊 Graphs and Visualizations
+## Graphs and Visualizations
 
 All 16 graphs are automatically generated when you run `python main.py` and saved to the `graphs/` directory.
 
@@ -527,42 +534,42 @@ All 16 graphs are automatically generated when you run `python main.py` and save
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 recommendation_project/
 │
-├── 📄 main.py                           ← Run this to execute everything
+├── main.py                              ← Run this to execute everything
 │
-├── 📁 data/
-│   └── 📊 amazon_reviews.csv            ← Dataset file goes here (not included — see How to Run)
+├── data/
+│   └── amazon_reviews.csv               ← Dataset file goes here (not included — see How to Run)
 │
-├── 📁 src/
-│   ├── 🔧 data_preprocessing.py         ← Phase 1: Load, clean, normalize
-│   ├── ⛏️  association_rules.py          ← Phase 3: Apriori + FP-Growth + Hybrid
-│   ├── 🤖 collaborative_filtering.py    ← Phase 4: SVD, SVD++, ALS, KNNBasic
-│   ├── 👥 clustering_anomaly.py         ← Phase 5+6: K-Means + Isolation Forest
-│   └── 📊 visualization.py              ← Phase 7: All graphs and dashboards
+├── src/
+│   ├── data_preprocessing.py            ← Phase 1: Load, clean, normalize
+│   ├── association_rules.py             ← Phase 3: Apriori + FP-Growth + Hybrid
+│   ├── collaborative_filtering.py       ← Phase 4: SVD, SVD++, ALS, KNNBasic
+│   ├── clustering_anomaly.py            ← Phase 5+6: K-Means + Isolation Forest
+│   └── visualization.py                 ← Phase 7: All graphs and dashboards
 │
-├── 📁 graphs/                           ← All generated visualizations (15 PNGs)
-│   ├── 📁 association_rules/            ← 1 graph
-│   ├── 📁 collaborative_filtering/      ← 3 graphs
-│   ├── 📁 clustering/                   ← 3 graphs
-│   ├── 📁 anomaly_detection/            ← 3 graphs
-│   └── 📁 comparison/                   ← 5 graphs + dashboard
+├── graphs/                              ← All generated visualizations (15 PNGs)
+│   ├── association_rules/               ← 1 graph
+│   ├── collaborative_filtering/         ← 3 graphs
+│   ├── clustering/                      ← 3 graphs
+│   ├── anomaly_detection/               ← 3 graphs
+│   └── comparison/                      ← 5 graphs + dashboard
 │
-├── 📁 results/
-│   ├── 📋 cf_comparison.csv             ← CF metrics vs paper
-│   ├── 📋 cf_results.csv                ← Detailed per-algorithm results
-│   └── 📋 assoc_comparison.csv          ← Association timing vs paper
+├── results/
+│   ├── cf_comparison.csv                ← CF metrics vs paper
+│   ├── cf_results.csv                   ← Detailed per-algorithm results
+│   └── assoc_comparison.csv             ← Association timing vs paper
 │
-├── 📄 .gitignore                        ← Git ignore rules
-└── 📄 README.md                         ← This file
+├── .gitignore                           ← Git ignore rules
+└── README.md                            ← This file
 ```
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Step 1 — Clone the Repository
 ```bash
@@ -599,7 +606,7 @@ results/  →  CSV comparison files saved automatically
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Library | Purpose |
 |---|---|
@@ -617,7 +624,7 @@ pip install pandas numpy matplotlib scikit-learn scipy
 
 ---
 
-## 🔍 Key Findings and Conclusions
+## Key Findings and Conclusions
 
 ### 1. SVD is the Best Algorithm
 SVD produced the lowest RMSE (0.9360) and MAE (0.7244) across all 3 cross-validation folds, which matches the paper's conclusion. It balances accuracy with training speed.
@@ -656,7 +663,7 @@ Raw Data
 
 ---
 
-## 📚 References
+## References
 
 1. **Padhy, N., Suman, S., Priyadarshini, T.S., Mallick, S.** (2024). A Recommendation System for E-Commerce Products Using Collaborative Filtering Approaches. *Engineering Proceedings*, 67, 50. https://doi.org/10.3390/engproc2024067050
 
@@ -670,7 +677,7 @@ Raw Data
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Sanika Jamale**
 - Course: Recommendation Systems
