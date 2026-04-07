@@ -1,10 +1,4 @@
 # 🛒 E-Commerce Recommendation System
-
-### Replication of Research Paper: *"A Recommendation System for E-Commerce Products Using Collaborative Filtering Approaches"*
-
-> **Padhy, N., Suman, S., Priyadarshini, T.S., Mallick, S.** — *Engineering Proceedings 2024, 67, 50*
-> Published: September 24, 2024 | DOI: [10.3390/engproc2024067050](https://doi.org/10.3390/engproc2024067050)
-
 ---
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
